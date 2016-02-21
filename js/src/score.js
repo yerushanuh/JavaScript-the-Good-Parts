@@ -14,5 +14,9 @@ game.score = function(parameters){
         parameters.value++;
     }
 
+    that.reset = function() {
+        parameters.value = 0;
+    }
+
     return that;
 };

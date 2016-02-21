@@ -21,7 +21,7 @@ game.entityFactory = function(parameters){
 
     that.createBox = function(parameters) {
         return game.entity2d({
-            position: game.vector2d({x: 200, y: 100}),
+            position: game.vector2d({x: parameters.x, y: parameters.y}),
             velocity: game.vector2d({x: 0, y: 0}),
             acceleration: game.vector2d({x: 0, y: 0}),
             sprite: game.sprite({
